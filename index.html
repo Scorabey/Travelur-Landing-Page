@@ -10,7 +10,7 @@
   <body class="flex flex-col items-center min-h-screen">
     <h1 class="visually-hidden" id="home">Trevelur Landing Page</h1>
     <!--Header-->
-    <header class="flex flex-col w-full bg-white-image">
+    <header class="flex flex-col w-full bg-white-image" aria-labelledby="home-title">
       <div class="flex flex-col justify-center items-center w-full bg-gray-500 h-full">
         <div class="w-full h-full flex flex-col items-center justify-around gap-36 pt-14 padding_disable">
           <div class="flex justify-center items-center relative w-10/12 nav_container">
@@ -48,7 +48,8 @@
           <div class="container max-w-5xl flex justify-center items-center">
 
             <!--Section-->
-            <section class="flex flex-col items-center gap-10">
+            <section class="flex flex-col items-center gap-10" aria-labelledby="services-title">
+              <h2 class="visually-hidden" id="services">Services</h2>
               <h1 class="font-bold flex-wrap text-center text-6xl text-white">Discover the World with Us, Your Journey Begins Here</h1>
               <p class="font-light flex-wrap text-center text-base text-white" >Explore the world with us and embark on unforgettable journeys to mesmerizing destinations. Whether you seek cultural escapades, serene getaways, or thrilling expeditions, our platform is your gateway to discovery.</p>
               <div class="flex flex-wrap gap-10 items-center justify-center">
@@ -126,7 +127,7 @@
         </section>
       </div>
       <!--About-->
-      <div class="container flex flex-col items-center gap-32">
+      <div class="container flex flex-col items-center gap-32" aria-labelledby="about-title">
         <h2 class="visually-hidden" id="about">About</h2>
         <!--Top Main-->
         <main class="flex flex-row items-center justify-between gap-20 w-full flex-wrap top-main">
@@ -267,6 +268,33 @@
 
           </section>
         </main>
+      </div>
+      <!--Banner-->
+      <div class="w-full flex justify-center items-center bg-blue-icon pt-20">
+        <h2 class="visually-hidden">Banner</h2>
+        <div class="container flex flex-row gap-20 justify-center items-start flex-1 banner-container" aria-labelledby="banner-title">
+          <!--Left Section-->
+          <section class="flex flex-col gap-10 items-start">
+            <h3 class="text-start text-white font-bold text-4xl">Unveiling Our Travel Vision: Experience Matters</h3>
+            <p class="text-start text-base font-light text-paragraph-white">Explore the world with us and embark on unforgettable journeys to mesmerizing destinations. Whether you seek cultural escapades, serene getaways, or thrilling expeditions, our platform is your gateway to discovery. </p>
+            <button class="explore_button flex items-center justify-center text-white font-bold text-base rounded-3xl bg-orange-100 px-7 py-2 cursor-pointer transition-all hover:bg-orange-200 active:scale-95">
+              Get Started
+            </button>
+          </section>
+
+          <!--Right Section-->
+          <section class="flex flex-col gap-10 items-start">
+            <h4 class="text-start text-white font-bold text-2xl">Embark on Unforgettable Travels</h4>
+            <p class="text-start text-base font-light text-paragraph-white">Explore the world with us and embark on unforgettable journeys to mesmerizing destinations. Whether you seek cultural escapades</p>
+            <div class="relative bg-white-image w-lg h-72 rounded-t-(--rounded-3xl)">
+              <span class="flex gap-3.5 items-center justify-center pt-4 pl-4.5 pr-3 pb-3 rounded-full bg-orange-100 absolute top-7/12 -left-6">
+                <svg width="29" height="29" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.25 5.03406C12.5833 5.80386 12.5833 7.72836 11.25 8.49816L3 13.2613C1.66667 14.0311 -6.9076e-07 13.0689 -6.23462e-07 11.5293L-2.07055e-07 2.00298C-1.39757e-07 0.463376 1.66667 -0.498878 3 0.270922L11.25 5.03406Z" fill="white"/>
+                </svg>
+              </span>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </body>

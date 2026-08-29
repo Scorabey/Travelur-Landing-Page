@@ -16,11 +16,13 @@
     --color-gray-400: #3D3B3B;
     --color-text-black: #272B34;
     --color-paragraph-grey: #79839A;
+    --color-paragraph-white: #F5F5F5;
     --color-blue-icon: #0E62DC;
     --color-blue-hover: #477DCC;
     --border-3xl: 2.563rem;
     --border-2xl: 1.938rem;
     --color-blue-800: rgba(14, 98, 220, 0.67);
+    --rounded-3xl: 3.125rem;
 }
 
 * {
@@ -127,6 +129,19 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .banner-container {
+        flex-wrap: wrap;
+
+        section {
+            width: 100%;
+            align-items: center;
+
+            h3, h4, p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
     .top-main {
         section {
             min-width: 100%;
