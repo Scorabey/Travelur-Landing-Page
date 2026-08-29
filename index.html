@@ -8,6 +8,7 @@
     <title>travel-landing-page</title>
   </head>
   <body class="flex flex-col items-center min-h-screen">
+    <h1 class="visually-hidden" id="home">Trevelur Landing Page</h1>
     <!--Header-->
     <header class="flex flex-col w-full bg-white-image">
       <div class="flex flex-col justify-center items-center w-full bg-gray-500 h-full">
@@ -48,7 +49,7 @@
 
             <!--Section-->
             <section class="flex flex-col items-center gap-10">
-              <h1 class="font-bold flex-wrap text-center text-6xl text-white" id="home">Discover the World with Us, Your Journey Begins Here</h1>
+              <h1 class="font-bold flex-wrap text-center text-6xl text-white">Discover the World with Us, Your Journey Begins Here</h1>
               <p class="font-light flex-wrap text-center text-base text-white" >Explore the world with us and embark on unforgettable journeys to mesmerizing destinations. Whether you seek cultural escapades, serene getaways, or thrilling expeditions, our platform is your gateway to discovery.</p>
               <div class="flex flex-wrap gap-10 items-center justify-center">
                 <button class="text-white rounded-xl px-7 py-2.5 border-white border bg-transparent cursor-pointer transition-all glossy-box active:scale-95">Search Destination</button>
@@ -125,18 +126,27 @@
         </section>
       </div>
       <!--About-->
-      <div class="container flex flex-col gap-20 items-center justify-center" id="about">
-        <div class="flex flex-row gap-20 custom-wrap">
-          <section class="flex flex-col items-start justify-start gap-8">
-            <div class="flex flex-col items-center justify-start gap-3.5">
+      <div class="container flex flex-col items-center gap-32">
+        <h2 class="visually-hidden" id="about">About</h2>
+        <!--Top Main-->
+        <main class="flex flex-row items-center justify-between gap-20 w-full flex-wrap top-main">
+          <!--Left Section-->
+          <section class="flex flex-col gap-8 flex-1 justify-center items-center">
+            <!--Title-->
+            <div class="flex flex-col gap-3.5 w-full">
               <span class="text-start w-full text-orange-100 font-bold text-xl">About Us</span>
-              <h3 class="text-start w-full text-text-black text-4xl font-bold">Champions of Authentic Travel Experiences</h3>
+              <h3 class="text-start w-full text-text-black font-bold text-4xl">Champions of Authentic Travel Experiences</h3>
             </div>
-            <p class="text-start text-paragraph-grey text-base font-light">Explore the world with us and embark on unforgettable journeys to mes merizing destinations. Whether you seek cultural escapades, serene getaways, or thrilling expeditions</p>
-            <div class="flex flex-row items-center justify-center gap-20 flex-wrap">
-              <article class="flex flex-col gap-4 w-56">
-                <div class="flex flex-row items-center justify-between gap-3">
-                  <div class="flex items-center justify-center p-2 rounded-md bg-blue-icon">
+
+            <!--Paragraph-->
+            <p class="text-start text-paragraph-grey font-light text-base">Explore the world with us and embark on unforgettable journeys to mes merizing destinations. Whether you seek cultural escapades, serene getaways, or thrilling expeditions</p>
+
+            <!--Article list-->
+            <div class="flex flex-row gap-y-20 w-full flex-wrap justify-between items-center article-list">
+              <!--Left Article-->
+              <article class="flex flex-col gap-4 w-56 custom-list-item">
+                <div class="flex flex-row gap-4">
+                  <div class="flex p-2 rounded-md bg-blue-icon h-fit">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <mask id="mask0_4003_26523" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                         <rect width="24" height="24" fill="#D9D9D9"/>
@@ -145,14 +155,16 @@
                         <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 17.5C12.75 16.75 13.4167 15.975 14 15.175C14.5 14.4917 14.9583 13.7417 15.375 12.925C15.7917 12.1083 16 11.3 16 10.5C16 9.4 15.6083 8.45833 14.825 7.675C14.0417 6.89167 13.1 6.5 12 6.5C10.9 6.5 9.95833 6.89167 9.175 7.675C8.39167 8.45833 8 9.4 8 10.5C8 11.3 8.20833 12.1083 8.625 12.925C9.04167 13.7417 9.5 14.4917 10 15.175C10.5833 15.975 11.25 16.75 12 17.5ZM12 12C11.5833 12 11.2292 11.8542 10.9375 11.5625C10.6458 11.2708 10.5 10.9167 10.5 10.5C10.5 10.0833 10.6458 9.72917 10.9375 9.4375C11.2292 9.14583 11.5833 9 12 9C12.4167 9 12.7708 9.14583 13.0625 9.4375C13.3542 9.72917 13.5 10.0833 13.5 10.5C13.5 10.9167 13.3542 11.2708 13.0625 11.5625C12.7708 11.8542 12.4167 12 12 12Z" fill="white"/>
                       </g>
                     </svg>
-                  </div>
-                  <span class="text-text-black text-base font-bold">Passion Meets Exploration</span>
+                  </div> <!--SVG Icon-->
+                  <span class="text-start text-text-black font-bold text-base">Passion Meets Exploration</span>
                 </div>
-                <p class="font-light text-paragraph-grey text-base">Explore the world with us and embark on unforgettable</p>
+                <p class="text-start text-paragraph-grey text-base font-light w-full">Explore the world with us and embark on unforgettable</p>
               </article>
-              <article class="flex flex-col gap-4 w-56">
-                <div class="flex flex-row items-center justify-between gap-3">
-                  <div class="flex items-center justify-center p-2 rounded-md bg-orange-100">
+
+              <!--Right Article-->
+              <article class="flex flex-col gap-4 w-56 custom-list-item">
+                <div class="flex flex-row gap-4">
+                  <div class="flex p-2 rounded-md bg-orange-100 h-fit">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <mask id="mask0_4003_26530" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
                         <rect width="24" height="24" fill="#D9D9D9"/>
@@ -161,20 +173,26 @@
                         <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C14.4333 2 16.5625 2.7625 18.3875 4.2875C20.2125 5.8125 21.35 7.725 21.8 10.025H19.75C19.4333 8.80833 18.8625 7.72083 18.0375 6.7625C17.2125 5.80417 16.2 5.08333 15 4.6V5C15 5.55 14.8042 6.02083 14.4125 6.4125C14.0208 6.80417 13.55 7 13 7H11V9C11 9.28333 10.9042 9.52083 10.7125 9.7125C10.5208 9.90417 10.2833 10 10 10H8V12H10V15H9L4.2 10.2C4.15 10.5 4.10417 10.8 4.0625 11.1C4.02083 11.4 4 11.7 4 12C4 14.1833 4.76667 16.0583 6.3 17.625C7.83333 19.1917 9.73333 19.9833 12 20V22ZM21.1 21.5L17.9 18.3C17.55 18.5 17.175 18.6667 16.775 18.8C16.375 18.9333 15.95 19 15.5 19C14.25 19 13.1875 18.5625 12.3125 17.6875C11.4375 16.8125 11 15.75 11 14.5C11 13.25 11.4375 12.1875 12.3125 11.3125C13.1875 10.4375 14.25 10 15.5 10C16.75 10 17.8125 10.4375 18.6875 11.3125C19.5625 12.1875 20 13.25 20 14.5C20 14.95 19.9333 15.375 19.8 15.775C19.6667 16.175 19.5 16.55 19.3 16.9L22.5 20.1L21.1 21.5ZM15.5 17C16.2 17 16.7917 16.7583 17.275 16.275C17.7583 15.7917 18 15.2 18 14.5C18 13.8 17.7583 13.2083 17.275 12.725C16.7917 12.2417 16.2 12 15.5 12C14.8 12 14.2083 12.2417 13.725 12.725C13.2417 13.2083 13 13.8 13 14.5C13 15.2 13.2417 15.7917 13.725 16.275C14.2083 16.7583 14.8 17 15.5 17Z" fill="white"/>
                       </g>
                     </svg>
-                  </div>
-                  <span class="text-text-black text-base font-bold">Embracing Global Wanderlust</span>
+                  </div> <!--SVG Icon-->
+                  <span class="text-start text-text-black font-bold text-base">Embracing Global Wanderlust</span>
                 </div>
-                <p class="font-light text-paragraph-grey text-base">Explore the world with us and embark on unforgettable</p>
+                <p class="text-start text-paragraph-grey text-base font-light w-full">Explore the world with us and embark on unforgettable</p>
               </article>
             </div>
+
           </section>
-          <section class="flex flex-col items-center justify-center relative">
-            <img src="https://i.pinimg.com/1200x/42/16/cc/4216ccf53e2bb83c8dd18da5a5d97307.jpg" alt="Image" class="image-width h-80 bg-white-image rounded-3xl">
-            <article class="flex absolute top-2/3 flex-col items-start justify-start p-12 bg-white rounded-3xl gap-5 w-4/5">
-              <h4 class="text-text-black font-bold text-xl text-start">Discover Our Journey, Passion for Travel Unveiled</h4>
-              <p class="text-base text-paragraph-grey text-start">Explore the world with us and embark on unforget table journeys to mes merizing destinations.</p>
-              <div class="flex items-center justify-start flex-row gap-8">
-                <button class="explore_button flex items-center justify-center text-white font-bold text-base rounded-3xl bg-blue-icon px-7 py-2 cursor-pointer transition-all hover:bg-orange-200 active:scale-95">
+
+          <!--Right Section-->
+          <section class="grid grid-cols-10 grid-rows-6 gap-0 flex-1 h-(--about-height)">
+            <!--Article image-->
+            <img src="https://i.pinimg.com/1200x/59/e4/d7/59e4d7927d53d7c09469c61714e1905a.jpg" alt="Travel Image" class="w-full h-full rounded-3xl border-0 bg-white-image row-start-1 row-end-5 col-start-1 col-end-11">
+
+            <!--Article-->
+            <article class="w-full h-full flex rounded-3xl bg-white col-start-2 col-end-10 row-start-4 row-end-7 items-center flex-col py-12 gap-5">
+              <h3 class="text-start font-bold text-lg text-text-black w-2/3">Discover Our Journey, Passion for Travel Unveiled</h3>
+              <p class="text-paragraph-grey font-light text-start text-base w-2/3">Explore the world with us and embark on unforget table journeys to mes merizing destinations.</p>
+              <div class="flex w-2/3 justify-start items-start flex-row gap-8">
+                <button class="flex items-center justify-center text-white font-bold text-base rounded-3xl bg-blue-icon px-7 py-2 cursor-pointer transition-all hover:bg-blue-hover active:scale-95">
                   Explore
                 </button>
                 <a href="#" target="_blank" class="flex gap-3.5 items-center justify-center text-text-black font-semibold text-base">
@@ -188,8 +206,67 @@
               </div>
             </article>
           </section>
-        </div>
-        <div class="flex flex-row gap-20"></div>
+        </main>
+
+        <!--Bottom Main-->
+        <main class="flex flex-row items-center justify-between gap-20 w-full flex-wrap top-main">
+          <!--Left Section-->
+          <section class="grid grid-cols-8 grid-rows-8 gap-0 flex-1 h-(--about-height)">
+            <img src="https://i.pinimg.com/736x/86/01/5c/86015c4d6bac08e6c399d3b437725203.jpg" alt="Travel Image" class="w-full h-full rounded-3xl border-0 bg-white-image row-start-1 row-end-9 col-start-1 col-end-8">
+
+            <!--Video Article-->
+            <article class="flex justify-center items-center bg-white-span rounded-(--border-3xl) row-start-2 row-end-8 col-start-4 col-end-9 p-5">
+              <div class="w-full h-full bg-blue-800 rounded-(--border-2xl) flex justify-center items-center gap-4">
+                <a href="#" target="_blank" class="flex flex-col gap-3.5 items-center justify-center text-white font-bold text-base text-center">
+                    <span class="flex gap-3.5 items-center justify-center pt-4 pl-4.5 pr-3 pb-3 rounded-full bg-orange-100">
+                      <svg width="29" height="29" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.25 5.03406C12.5833 5.80386 12.5833 7.72836 11.25 8.49816L3 13.2613C1.66667 14.0311 -6.9076e-07 13.0689 -6.23462e-07 11.5293L-2.07055e-07 2.00298C-1.39757e-07 0.463376 1.66667 -0.498878 3 0.270922L11.25 5.03406Z" fill="white"/>
+                      </svg>
+                    </span>
+                  Watch Video
+                </a>
+              </div>
+            </article>
+          </section>
+
+          <!--Right Section-->
+          <section class="flex flex-col gap-8 flex-1 justify-center items-center">
+            <!--Title-->
+            <div class="flex flex-col gap-3.5 w-full">
+              <span class="text-start w-full text-orange-100 font-bold text-xl">About Us</span>
+              <h3 class="text-start w-full text-text-black font-bold text-4xl">Exploring Beyond Borders Our Travel Philosophy</h3>
+            </div>
+
+            <!--Paragraph-->
+            <p class="text-start text-paragraph-grey font-light text-base">Explore the world with us and embark on unforgettable journeys to mesm erizing destinations. Whether you seek cultural escapades, serene getawa ys, or thrilling expeditions</p>
+
+            <!--Article list-->
+            <div class="flex flex-row gap-y-20 w-full flex-wrap justify-between items-center article-list">
+              <!--Left Article-->
+              <article class="flex flex-row gap-4 w-58 custom-list-item">
+                <div class="flex p-2 rounded-md bg-blue-icon w-fit h-fit">
+                  <span class="text-center text-white text-base font-extrabold">01</span>
+                </div> <!--SVG Icon-->
+                <div class="flex flex-col gap-1">
+                  <span class="text-start text-text-black font-bold text-base">Section About One</span>
+                  <p class="text-start text-paragraph-grey text-base font-light w-full">Explore the world with us embark unforgettable</p>
+                </div>
+              </article>
+
+              <!--Right Article-->
+              <article class="flex flex-row gap-4 w-58 custom-list-item">
+                  <div class="flex p-2 rounded-md bg-orange-100 w-fit h-fit">
+                    <span class="text-center text-white text-base font-extrabold">02</span>
+                  </div> <!--SVG Icon-->
+                  <div class="flex flex-col gap-1">
+                    <span class="text-start text-text-black font-bold text-base">Section About Two</span>
+                    <p class="text-start text-paragraph-grey text-base font-light w-full">Explore the world with us embark unforgettable</p>
+                  </div>
+              </article>
+            </div>
+
+          </section>
+        </main>
       </div>
     </div>
   </body>

@@ -6,6 +6,7 @@
     --section-height: 27rem;
     --span-height: 5.938rem;
     --rounded-span: 3.75rem;
+    --about-height: 34.188rem;
     --color-gray-500: rgba(0, 0, 0, 0.54);
     --color-white-image: #D9D9D9;
     --color-white-span: #F9F9F9;
@@ -16,6 +17,10 @@
     --color-text-black: #272B34;
     --color-paragraph-grey: #79839A;
     --color-blue-icon: #0E62DC;
+    --color-blue-hover: #477DCC;
+    --border-3xl: 2.563rem;
+    --border-2xl: 1.938rem;
+    --color-blue-800: rgba(14, 98, 220, 0.67);
 }
 
 * {
@@ -29,6 +34,14 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--color-white-span);
+}
+
+#about {
+    scroll-margin-top: 70px;
+}
+
+.custom-list-item {
+    list-style: none;
 }
 
 .visually-hidden {
@@ -48,7 +61,7 @@ body {
 }
 
 .image-width {
-    width: 65rem;
+    width: 69rem;
 }
 
 .glossy-box {
@@ -114,6 +127,18 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .top-main {
+        section {
+            min-width: 100%;
+            flex: 0;
+        }
+    }
+    .about-image {
+        display: none;
+    }
+    .about-article {
+        position: static;
+    }
     .custom-wrap {
         flex-wrap: wrap;
     }
@@ -197,5 +222,18 @@ body {
     .humburger_menu:has(#humburger:checked) ~ .nav_list {
         max-height: 100vh;
         padding-block: 1rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .article-list {
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        .custom-list-item {
+            width: 90%;
+            padding: 0;
+        }
     }
 }
