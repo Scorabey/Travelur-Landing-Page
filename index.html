@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>travel-landing-page</title>
+  </head>
+  <body class="flex flex-col items-center min-h-screen">
+    <!--Header-->
+    <header class="flex flex-col w-full bg-white-image">
+      <div class="flex flex-col justify-center items-center w-full bg-gray-500 h-full">
+        <div class="w-full h-full flex flex-col items-center justify-around gap-36 pt-14 padding_disable">
+          <div class="flex justify-center items-center relative w-10/12 nav_container">
+
+            <!--Navigation-->
+            <nav class="flex items-center justify-between w-full h-fit flex-wrap">
+
+              <!--Main Logo-->
+              <a href="#" target="_blank" class="logo">
+                <span class="uppercase text-white font-bold text-xl">TRAVELUR</span>
+              </a>
+
+              <!--Humburger Menu-->
+              <div class="humburger_menu">
+                <input type="checkbox" id="humburger" class="visually-hidden" />
+                <label for="humburger" class="flex items-center justify-between py-1.5 px-1 bg-gray-400 rounded-md flex-col gap-2 cursor-pointer transition duration-200">
+                  <span class="line bg-white w-9 h-1 rounded-full"></span>
+                  <span class="line bg-white w-9 h-1 rounded-full"></span>
+                  <span class="line bg-white w-9 h-1 rounded-full"></span>
+                </label>
+              </div>
+
+              <!--Navigation List-->
+              <ul class="nav_list flex items-center justify-between gap-x-14">
+                <li class="nav-item" ><a href="#home" class="select-none text-base font-medium text-white-50 py-6 px-2 relative border-b-2 border-b-transparent text-center transition-all duration-200 hover:text-white list-item-hover">Home</a></li>
+                <li class="nav-item" ><a href="#about" class="select-none text-base font-medium text-white-50 py-6 px-2 relative border-b-2 border-b-transparent text-center transition-all duration-200 hover:text-white list-item-hover">About</a></li>
+                <li class="nav-item" ><a href="#services" class="select-none text-base font-medium text-white-50 py-6 px-2 relative border-b-2 border-b-transparent text-center transition-all duration-200 hover:text-white list-item-hover">Services</a></li>
+                <li class="nav-item" ><a href="#destination" class="select-none text-base font-medium text-white-50 py-6 px-2 relative border-b-2 border-b-transparent text-center transition-all duration-200 hover:text-white list-item-hover">Destination</a></li>
+              </ul>
+              <button class="explore_button flex items-center justify-center text-white font-bold text-base rounded-3xl bg-orange-100 px-7 py-2 cursor-pointer transition-all hover:bg-orange-200 active:scale-95">
+                Explore
+              </button>
+            </nav>
+          </div>
+          <div class="container max-w-5xl flex justify-center items-center">
+
+            <!--Section-->
+            <section class="flex flex-col items-center gap-10">
+              <h1 class="font-bold flex-wrap text-center text-6xl text-white" id="home">Discover the World with Us, Your Journey Begins Here</h1>
+              <p class="font-light flex-wrap text-center text-base text-white" >Explore the world with us and embark on unforgettable journeys to mesmerizing destinations. Whether you seek cultural escapades, serene getaways, or thrilling expeditions, our platform is your gateway to discovery.</p>
+              <div class="flex flex-wrap gap-10 items-center justify-center">
+                <button class="text-white rounded-xl px-7 py-2.5 border-white border bg-transparent cursor-pointer transition-all glossy-box active:scale-95">Search Destination</button>
+                <div>
+                  <a href="#" target="_blank" class="flex gap-3.5 items-center justify-center text-white font-semibold text-base">
+                    <span class="flex gap-3.5 items-center justify-center pt-2.5 pl-3 pr-2.5 pb-2.5 rounded-full bg-orange-100">
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.25 5.03406C12.5833 5.80386 12.5833 7.72836 11.25 8.49816L3 13.2613C1.66667 14.0311 -6.9076e-07 13.0689 -6.23462e-07 11.5293L-2.07055e-07 2.00298C-1.39757e-07 0.463376 1.66667 -0.498878 3 0.270922L11.25 5.03406Z" fill="white"/>
+                      </svg>
+                    </span>
+                    Get Started
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <span class="w-full rounded-t-(--rounded-span) bg-white-span grow z-50 h-(--span-height)"></span>
+        </div>
+      </div>
+    </header>
+    <div class="flex flex-col items-center gap-36 w-full">
+      <!--Achievements-->
+      <div class="container flex flex-col items-center justify-center gap-12">
+        <h2 class="font-bold text-center text-5xl text-text-black w-3/5">Discover the World with Us, Your Journey Begins Here</h2>
+        <section class="flex flex-row items-center justify-center gap-9 flex-wrap">
+          <article class="flex flex-col items-center gap-5">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4003_26489" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+                <rect width="55.9621" height="55.9621" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_4003_26489)">
+                <path d="M23.3175 51.2986V46.6351H53.6303V51.2986H23.3175ZM25.6493 44.3034C25.6493 41.1555 26.6403 38.406 28.6223 36.0548C30.6043 33.7036 33.1109 32.256 36.1422 31.7119V30.2546C36.1422 29.5939 36.3656 29.0401 36.8126 28.5932C37.2595 28.1463 37.8133 27.9228 38.4739 27.9228C39.1346 27.9228 39.6884 28.1463 40.1353 28.5932C40.5822 29.0401 40.8057 29.5939 40.8057 30.2546V31.7119C43.7981 32.256 46.295 33.7036 48.2964 36.0548C50.2979 38.406 51.2986 41.1555 51.2986 44.3034H25.6493ZM31.7701 39.5816H45.0611C44.3228 38.5323 43.3803 37.687 42.2339 37.0458C41.0874 36.4046 39.8341 36.0839 38.4739 36.0839C37.0749 36.0839 35.7924 36.4046 34.6265 37.0458C33.4607 37.687 32.5085 38.5323 31.7701 39.5816ZM2.33176 30.3128V4.66356H16.3223V8.0446L32.6446 3.49768L51.2986 9.32706V11.6588C51.2986 13.6019 50.6185 15.2536 49.2583 16.6138C47.8981 17.974 46.2464 18.6541 44.3033 18.6541H39.6398V20.0531C39.6398 21.0247 39.3581 21.9088 38.7946 22.7055C38.231 23.5022 37.5024 24.0754 36.6085 24.4252L20.8692 30.3128H2.33176ZM6.99526 25.6493H11.6588V9.32706H6.99526V25.6493ZM16.3223 25.6493H20.0531L33.5773 20.6944C34.0047 20.5389 34.3448 20.2766 34.5974 19.9074C34.85 19.5382 34.9763 19.1204 34.9763 18.6541H30.8374L24.0171 20.8692L22.618 16.4389L29.9047 13.9906H44.3033C44.6531 13.9906 45.0903 13.8643 45.6149 13.6117C46.1396 13.3591 46.4019 13.0579 46.4019 12.7081L32.528 8.39436L16.3223 12.8247V25.6493Z" fill="#F55D3C"/>
+              </g>
+            </svg>
+            <span class="text-center text-xl text-text-black font-bold">Accommodation</span>
+            <p class="text-center text-base text-paragraph-grey font-light">Get ready to immerse yourself in vibrant cultures</p>
+          </article>
+          <article class="flex flex-col items-center gap-5">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4003_26495" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+                <rect width="55.9621" height="55.9621" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_4003_26495)">
+                <path d="M27.981 51.2985C24.7555 51.2985 21.7242 50.6864 18.8872 49.4623C16.0502 48.2381 13.5825 46.5767 11.4839 44.4781C9.38531 42.3796 7.72394 39.9118 6.49977 37.0748C5.2756 34.2379 4.66351 31.2066 4.66351 27.981C4.66351 24.7554 5.2756 21.7241 6.49977 18.8871C7.72394 16.0502 9.38531 13.5824 11.4839 11.4838C13.5825 9.38525 16.0502 7.72388 18.8872 6.49971C21.7242 5.27554 24.7555 4.66345 27.981 4.66345C31.2066 4.66345 34.2379 5.27554 37.0749 6.49971C39.9119 7.72388 42.3796 9.38525 44.4782 11.4838C46.5768 13.5824 48.2382 16.0502 49.4623 18.8871C50.6865 21.7241 51.2986 24.7554 51.2986 27.981C51.2986 31.2066 50.6865 34.2379 49.4623 37.0748C48.2382 39.9118 46.5768 42.3796 44.4782 44.4781C42.3796 46.5767 39.9119 48.2381 37.0749 49.4623C34.2379 50.6864 31.2066 51.2985 27.981 51.2985ZM27.981 40.8056C29.7299 39.0568 31.2844 37.2497 32.6446 35.3843C33.8104 33.7909 34.8792 32.0421 35.8507 30.1379C36.8223 28.2336 37.3081 26.3488 37.3081 24.4834C37.3081 21.9184 36.3948 19.7227 34.5683 17.8962C32.7417 16.0696 30.546 15.1563 27.981 15.1563C25.4161 15.1563 23.2204 16.0696 21.3938 17.8962C19.5673 19.7227 18.654 21.9184 18.654 24.4834C18.654 26.3488 19.1398 28.2336 20.1114 30.1379C21.0829 32.0421 22.1517 33.7909 23.3175 35.3843C24.6777 37.2497 26.2322 39.0568 27.981 40.8056ZM27.981 27.981C27.0095 27.981 26.1837 27.6409 25.5036 26.9608C24.8235 26.2807 24.4834 25.4549 24.4834 24.4834C24.4834 23.5118 24.8235 22.686 25.5036 22.0059C26.1837 21.3258 27.0095 20.9857 27.981 20.9857C28.9526 20.9857 29.7784 21.3258 30.4585 22.0059C31.1386 22.686 31.4787 23.5118 31.4787 24.4834C31.4787 25.4549 31.1386 26.2807 30.4585 26.9608C29.7784 27.6409 28.9526 27.981 27.981 27.981Z" fill="#0E62DC"/>
+              </g>
+            </svg>
+            <span class="text-center text-xl text-text-black font-bold">Destination</span>
+            <p class="text-center text-base text-paragraph-grey font-light">Get ready to immerse yourself in vibrant cultures</p>
+          </article>
+          <article class="flex flex-col items-center gap-5">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4003_26501" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+                <rect width="55.9621" height="55.9621" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_4003_26501)">
+                <path d="M27.9811 51.2985C24.7555 51.2985 21.7242 50.6864 18.8872 49.4623C16.0502 48.2381 13.5825 46.5767 11.4839 44.4781C9.38531 42.3796 7.72394 39.9118 6.49977 37.0748C5.2756 34.2379 4.66351 31.2066 4.66351 27.981C4.66351 24.7554 5.2756 21.7241 6.49977 18.8871C7.72394 16.0502 9.38531 13.5824 11.4839 11.4838C13.5825 9.38525 16.0502 7.72388 18.8872 6.49971C21.7242 5.27554 24.7555 4.66345 27.9811 4.66345C33.655 4.66345 38.6197 6.44141 42.8751 9.99734C47.1306 13.5533 49.783 18.0127 50.8322 23.3758H46.0521C45.3138 20.5388 43.9827 18.003 42.059 15.7684C40.1353 13.5338 37.7744 11.853 34.9763 10.726V11.6587C34.9763 12.9412 34.5197 14.039 33.6064 14.9523C32.6931 15.8656 31.5953 16.3222 30.3128 16.3222H25.6493V20.9857C25.6493 21.6464 25.4258 22.2002 24.9789 22.6471C24.532 23.094 23.9782 23.3175 23.3175 23.3175H18.654V27.981H23.3175V34.9762H20.9858L9.79337 23.7838C9.67678 24.4834 9.56991 25.1829 9.47276 25.8824C9.3756 26.5819 9.32702 27.2815 9.32702 27.981C9.32702 33.072 11.1147 37.444 14.6901 41.0971C18.2654 44.7502 22.6957 46.5962 27.9811 46.635V51.2985ZM49.2 50.1326L41.7384 42.671C40.9223 43.1374 40.0479 43.526 39.1152 43.8369C38.1825 44.1478 37.1915 44.3033 36.1422 44.3033C33.2275 44.3033 30.75 43.2831 28.7097 41.2428C26.6694 39.2025 25.6493 36.7251 25.6493 33.8104C25.6493 30.8957 26.6694 28.4182 28.7097 26.3779C30.75 24.3376 33.2275 23.3175 36.1422 23.3175C39.0569 23.3175 41.5344 24.3376 43.5747 26.3779C45.6149 28.4182 46.6351 30.8957 46.6351 33.8104C46.6351 34.8597 46.4796 35.8507 46.1687 36.7834C45.8578 37.7161 45.4692 38.5905 45.0029 39.4066L52.4645 46.8682L49.2 50.1326ZM36.1422 39.6398C37.7744 39.6398 39.154 39.0762 40.2811 37.9492C41.4081 36.8222 41.9716 35.4426 41.9716 33.8104C41.9716 32.1781 41.4081 30.7985 40.2811 29.6715C39.154 28.5445 37.7744 27.981 36.1422 27.981C34.51 27.981 33.1303 28.5445 32.0033 29.6715C30.8763 30.7985 30.3128 32.1781 30.3128 33.8104C30.3128 35.4426 30.8763 36.8222 32.0033 37.9492C33.1303 39.0762 34.51 39.6398 36.1422 39.6398Z" fill="#F55D3C"/>
+              </g>
+            </svg>
+            <span class="text-center text-xl text-text-black font-bold">Explore the Place</span>
+            <p class="text-center text-base text-paragraph-grey font-light">Get ready to immerse yourself in vibrant cultures</p>
+          </article>
+          <article class="flex flex-col items-center gap-5">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_4003_26507" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="56" height="56">
+                <rect width="55.9621" height="55.9621" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_4003_26507)">
+                <path d="M15.9726 39.9896L8.51094 35.909L10.9593 33.4607L16.7887 34.2768L25.8825 25.183L7.69482 15.273L10.9593 12.0086L33.2275 17.7214L42.3797 8.68582C43.0403 8.02516 43.8662 7.69482 44.8572 7.69482C45.8481 7.69482 46.674 8.02516 47.3346 8.68582C47.9953 9.34648 48.3256 10.1723 48.3256 11.1633C48.3256 12.1543 47.9953 12.9801 47.3346 13.6408L38.2408 22.7346L43.9536 45.0029L40.6891 48.2673L30.7792 30.0797L21.6853 39.1735L22.5015 45.0029L20.0531 47.4512L15.9726 39.9896Z" fill="#0E62DC"/>
+              </g>
+            </svg>
+            <span class="text-center text-xl text-text-black font-bold">Transportation</span>
+            <p class="text-center text-base text-paragraph-grey font-light">Get ready to immerse yourself in vibrant cultures</p>
+          </article>
+        </section>
+      </div>
+      <!--About-->
+      <div class="container flex flex-col gap-20 items-center justify-center" id="about">
+        <div class="flex flex-row gap-20 custom-wrap">
+          <section class="flex flex-col items-start justify-start gap-8">
+            <div class="flex flex-col items-center justify-start gap-3.5">
+              <span class="text-start w-full text-orange-100 font-bold text-xl">About Us</span>
+              <h3 class="text-start w-full text-text-black text-4xl font-bold">Champions of Authentic Travel Experiences</h3>
+            </div>
+            <p class="text-start text-paragraph-grey text-base font-light">Explore the world with us and embark on unforgettable journeys to mes merizing destinations. Whether you seek cultural escapades, serene getaways, or thrilling expeditions</p>
+            <div class="flex flex-row items-center justify-center gap-20 flex-wrap">
+              <article class="flex flex-col gap-4 w-56">
+                <div class="flex flex-row items-center justify-between gap-3">
+                  <div class="flex items-center justify-center p-2 rounded-md bg-blue-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_4003_26523" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <rect width="24" height="24" fill="#D9D9D9"/>
+                      </mask>
+                      <g mask="url(#mask0_4003_26523)">
+                        <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 17.5C12.75 16.75 13.4167 15.975 14 15.175C14.5 14.4917 14.9583 13.7417 15.375 12.925C15.7917 12.1083 16 11.3 16 10.5C16 9.4 15.6083 8.45833 14.825 7.675C14.0417 6.89167 13.1 6.5 12 6.5C10.9 6.5 9.95833 6.89167 9.175 7.675C8.39167 8.45833 8 9.4 8 10.5C8 11.3 8.20833 12.1083 8.625 12.925C9.04167 13.7417 9.5 14.4917 10 15.175C10.5833 15.975 11.25 16.75 12 17.5ZM12 12C11.5833 12 11.2292 11.8542 10.9375 11.5625C10.6458 11.2708 10.5 10.9167 10.5 10.5C10.5 10.0833 10.6458 9.72917 10.9375 9.4375C11.2292 9.14583 11.5833 9 12 9C12.4167 9 12.7708 9.14583 13.0625 9.4375C13.3542 9.72917 13.5 10.0833 13.5 10.5C13.5 10.9167 13.3542 11.2708 13.0625 11.5625C12.7708 11.8542 12.4167 12 12 12Z" fill="white"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="text-text-black text-base font-bold">Passion Meets Exploration</span>
+                </div>
+                <p class="font-light text-paragraph-grey text-base">Explore the world with us and embark on unforgettable</p>
+              </article>
+              <article class="flex flex-col gap-4 w-56">
+                <div class="flex flex-row items-center justify-between gap-3">
+                  <div class="flex items-center justify-center p-2 rounded-md bg-orange-100">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_4003_26530" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                        <rect width="24" height="24" fill="#D9D9D9"/>
+                      </mask>
+                      <g mask="url(#mask0_4003_26530)">
+                        <path d="M12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C14.4333 2 16.5625 2.7625 18.3875 4.2875C20.2125 5.8125 21.35 7.725 21.8 10.025H19.75C19.4333 8.80833 18.8625 7.72083 18.0375 6.7625C17.2125 5.80417 16.2 5.08333 15 4.6V5C15 5.55 14.8042 6.02083 14.4125 6.4125C14.0208 6.80417 13.55 7 13 7H11V9C11 9.28333 10.9042 9.52083 10.7125 9.7125C10.5208 9.90417 10.2833 10 10 10H8V12H10V15H9L4.2 10.2C4.15 10.5 4.10417 10.8 4.0625 11.1C4.02083 11.4 4 11.7 4 12C4 14.1833 4.76667 16.0583 6.3 17.625C7.83333 19.1917 9.73333 19.9833 12 20V22ZM21.1 21.5L17.9 18.3C17.55 18.5 17.175 18.6667 16.775 18.8C16.375 18.9333 15.95 19 15.5 19C14.25 19 13.1875 18.5625 12.3125 17.6875C11.4375 16.8125 11 15.75 11 14.5C11 13.25 11.4375 12.1875 12.3125 11.3125C13.1875 10.4375 14.25 10 15.5 10C16.75 10 17.8125 10.4375 18.6875 11.3125C19.5625 12.1875 20 13.25 20 14.5C20 14.95 19.9333 15.375 19.8 15.775C19.6667 16.175 19.5 16.55 19.3 16.9L22.5 20.1L21.1 21.5ZM15.5 17C16.2 17 16.7917 16.7583 17.275 16.275C17.7583 15.7917 18 15.2 18 14.5C18 13.8 17.7583 13.2083 17.275 12.725C16.7917 12.2417 16.2 12 15.5 12C14.8 12 14.2083 12.2417 13.725 12.725C13.2417 13.2083 13 13.8 13 14.5C13 15.2 13.2417 15.7917 13.725 16.275C14.2083 16.7583 14.8 17 15.5 17Z" fill="white"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <span class="text-text-black text-base font-bold">Embracing Global Wanderlust</span>
+                </div>
+                <p class="font-light text-paragraph-grey text-base">Explore the world with us and embark on unforgettable</p>
+              </article>
+            </div>
+          </section>
+          <section class="flex flex-col items-center justify-center relative">
+            <img src="https://i.pinimg.com/1200x/42/16/cc/4216ccf53e2bb83c8dd18da5a5d97307.jpg" alt="Image" class="image-width h-80 bg-white-image rounded-3xl">
+            <article class="flex absolute top-2/3 flex-col items-start justify-start p-12 bg-white rounded-3xl gap-5 w-4/5">
+              <h4 class="text-text-black font-bold text-xl text-start">Discover Our Journey, Passion for Travel Unveiled</h4>
+              <p class="text-base text-paragraph-grey text-start">Explore the world with us and embark on unforget table journeys to mes merizing destinations.</p>
+              <div class="flex items-center justify-start flex-row gap-8">
+                <button class="explore_button flex items-center justify-center text-white font-bold text-base rounded-3xl bg-blue-icon px-7 py-2 cursor-pointer transition-all hover:bg-orange-200 active:scale-95">
+                  Explore
+                </button>
+                <a href="#" target="_blank" class="flex gap-3.5 items-center justify-center text-text-black font-semibold text-base">
+                    <span class="flex gap-3.5 items-center justify-center pt-2.5 pl-3 pr-2.5 pb-2.5 rounded-full bg-orange-100">
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.25 5.03406C12.5833 5.80386 12.5833 7.72836 11.25 8.49816L3 13.2613C1.66667 14.0311 -6.9076e-07 13.0689 -6.23462e-07 11.5293L-2.07055e-07 2.00298C-1.39757e-07 0.463376 1.66667 -0.498878 3 0.270922L11.25 5.03406Z" fill="white"/>
+                      </svg>
+                    </span>
+                  Get Started
+                </a>
+              </div>
+            </article>
+          </section>
+        </div>
+        <div class="flex flex-row gap-20"></div>
+      </div>
+    </div>
+  </body>
+</html>
