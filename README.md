@@ -30,8 +30,8 @@ TRAVELUR is a concept brand for a travel studio that plans smaller, more persona
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/Scorabey/travelur-landing.git
-cd travelur-landing
+git@github.com:Scorabey/Travelur-Landing-Page.git
+cd Travelur-Landing-Page
 npm install
 ```
 
@@ -62,18 +62,9 @@ travelur-landing/
 ├── vite.config.js
 ├── src/
 │   ├── style.css
-│   ├── main.js
-│   └── assets/
-│       └── images/
 ├── public/
 └── README.md
 ```
-
-## Screenshots
-
-| Hero | Destinations |
-|------|--------------|
-| ![Hero section](./assets/screenshots/hero.png) | ![Destinations section](./assets/screenshots/destinations.png) |
 
 ## Credits
 
@@ -83,7 +74,7 @@ travelur-landing/
 
 ## Author
 
-**Shatylov D. M.** ([@Scorabey](https://github.com/Scorabey))
+**Shatilov D. M.** ([@Scorabey](https://github.com/Scorabey))
 
 ## License
 
