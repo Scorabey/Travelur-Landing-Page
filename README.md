@@ -2,9 +2,9 @@
 
 A responsive landing page for TRAVELUR, a fictional independent travel-planning studio, built as a front-end portfolio piece. HTML, CSS, and vanilla JavaScript, bundled with Vite.
 
-**[Live Demo](#)** · **[Design Reference](#)**
+**[Design Reference](https://www.figma.com/community/file/1426563158747770820/310-landing-pages-figmas-largest-web-pages-collection-free)**
 
-![TRAVELUR landing page preview](./preview.png)
+![TRAVELUR landing page preview](./Page-Preview.png)
 
 ## Overview
 
@@ -22,6 +22,7 @@ TRAVELUR is a concept brand for a travel studio that plans smaller, more persona
 
 - HTML5
 - CSS3 (Flexbox / Grid)
+- TailwindCSS
 - Vanilla JavaScript
 - [Vite](https://vitejs.dev) — dev server and build tool
 
