@@ -168,6 +168,9 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .achievements-section {
+        flex-wrap: wrap;
+    }
     .footer-section {
         flex-wrap: wrap;
         justify-content: center;
@@ -177,7 +180,7 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 1rem;  
+        gap: 1rem;
     }
     header {
         padding-top: 72px;
